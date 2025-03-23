@@ -1,0 +1,165 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Set background color */
+body {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #002b5e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.add-to-chrome {
+    background-color: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Header styles */
+header {
+    margin-top: 100px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #cc7a00;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* About and Vision Sections */
+.about-container, .vision-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.about-container h1, .vision-container h1, .contact-container h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* Paragraph Styling */
+.about-content p, .vision-content p, .contact-container p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Contact Us Section */
+.contact-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Increase text size inside About Us and Vision */
+.about-container p, .vision-container p {
+    font-size: 22px; /* Adjust the size as needed */
+    line-height: 1.8; /* Improve readability */
+}
+/* Contact Us Section */
+.contact-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 22px; /* Match the font size of Vision and About */
+    line-height: 1.8;
+}
+
+/* Contact Heading */
+.contact-container h2 {
+    font-size: 35px; /* Match Vision and About Us */
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+/* Contact Text */
+.contact-container p {
+    color: white;
+    font-size: 20px;
+}
