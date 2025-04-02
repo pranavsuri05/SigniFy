@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigniFy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#home" class="logo">SigniFy</a>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" class="add-to-chrome">Add to Chrome</a></li>
+        </ul>
+    </nav>
+    
+    <header id="home">
+        <div class="button-container">
+            <button onclick="openSignRecognition()">Try It Out</button>
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="slide fade"><img src="assets/firstscreen1.webp" alt="Slide 1"></div>
+            <div class="slide fade"><img src="assets/firstscreen2.webp" alt="Slide 2"></div>
+            <div class="slide fade"><img src="assets/firstscreen3.jpg" alt="Slide 3"></div>
+            <div class="slide fade"><img src="assets/firstscreen4.jpeg" alt="Slide 4"></div>
+        </div>
+    </header>
+</br>
+</br>
+    <section id="about" class="about-container">
+        <h1>About Us</h1>
+    </br>
+        <p>
+            We are Internshilpaglus, a team of passionate technologists from Maharaja Agrasen Institute of Technology, specializing in Artificial Intelligence and IT-driven solutions. With over a year of hands-on experience, we are committed to addressing real-world challenges through cutting-edge innovation and technology.
+        </p>
+    </br>
+        <p>
+            Our team—Sunny Chaudhary, Pranav Suri, Sidhant Malik, and Ram Mishra—is dedicated to harnessing the power of AI to develop impactful solutions. Our latest endeavor, an AI-powered Indian Sign Language translation system, exemplifies our mission to bridge communication gaps through technology.
+        </p>
+    </br>
+        <p>
+            We believe in continuous learning, pushing boundaries, and leveraging AI to create meaningful and transformative solutions for society.
+        </p>
+    </br>
+        <p>
+            We are particularly inclined toward solving sign language translation challenges using hand gesture recognition, aiming to make communication more inclusive and accessible through AI-driven innovation.
+        </p>
+    </section>
+</br>
+</br>
+    <section id="vision" class="vision-container">
+        <h1>Our Vision</h1>
+    </br>
+        <p>
+            At Internshilpaglus, we envision a world where communication is truly inclusive. Our ISL to Text AI model is designed to bridge the gap between the Deaf and hearing communities by enabling seamless, real-time Indian Sign Language (ISL) translation.
+        </p>
+    </br>
+        <p>
+            By integrating Artificial Intelligence, Edge Computing, Augmented Reality (AR), and Natural Language Processing (NLP), we aim to revolutionize accessibility across education, workplaces, public services, and digital platforms. This initiative not only enhances everyday interactions but also empowers the Deaf community with greater independence and opportunities.
+        </p>
+    </br>
+        <p>
+            From enhancing communication in education and professional settings to enabling more immersive experiences in public services and digital platforms, the potential impact is vast. As part of this vision, we are also working on a Chrome extension, making ISL translation more accessible online—just one of many ways we aim to integrate this solution into daily life.
+        </p>
+    </br>
+        <p>
+            Our ultimate goal is to make sign language universally recognized and accessible, fostering a more connected, inclusive, and empowered world through AI-driven innovation.
+        </p>
+    </section>
+</br>
+</br>
+    
+<section id="contact" class="contact-container">
+    <h2>Contact Us!</h2>
+    <p>Email: pranavsuri05@gmail.com</p>
+    <p>Phone: +91 9650199070</p>
+    <p>Address: Maharaja Agrasen Institute of Technology, Delhi</p>
+</section>
+    <script>
+        function openSignRecognition() {
+            alert('Sign recognition feature will be implemented soon!');
+        }
+        
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+        showSlides();
+    </script>
+</body>
+</html>

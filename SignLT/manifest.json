@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "SigniFy - Real-Time Sign Language Translator",
+    "version": "1.0",
+    "description": "Translates sign language into text in real time during Google Meet calls.",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "host_permissions": ["https://meet.google.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://meet.google.com/*"],
+        "js": ["contents.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
